@@ -1,11 +1,12 @@
 import React from 'react'
 import {NavItems} from './NavItems'
 import { Link } from 'react-router-dom'
+import Button from './Button'
 const NavBar = () => {
   return (
-    <nav className='flex items-center justify-between bg-[#293239] px-24 fixed w-full z-10'>
-        <div className='w-15 h-15 bg-red-500 flex items-center justify-center text-white'>Logo</div>
-        <ul className='flex flex-nowrap gap-x-5 justify-between text-white'>
+    <nav className='flex items-center justify-between bg-[#293239] px-24 fixed w-full h-15 z-100 shadow-lg'>
+        <div><img src="/src/assets/images/Logo.svg" alt="Logo" className='w-50 '/></div>
+        <ul className='flex flex-nowrap gap-x-10 justify-between text-white'>
         {
             NavItems.map((items,i) => {
                 return (
@@ -16,9 +17,7 @@ const NavBar = () => {
             })
         }
         </ul>
-        <div className='w-20 h-8 py-2 px-6 rounded-3xl bg-white flex items-center justify-center'>
-            <button>Contact</button>
-        </div>
+        <Button bgcolor="bg-white" text='Contact'/>
     </nav>
   )
 }

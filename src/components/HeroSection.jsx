@@ -1,14 +1,31 @@
-import React from 'react'
-
+import React from "react";
+import Typewriter from 'react-typewriter-effect';
 
 const HeroSection = () => {
-  return (
-    <div className='text-center h-screen flex flex-col justify-center items-center'>
-      <Typewriter texts={["Web Developer", "Web Designer"]} speed={100} loop={true}  />
-      <h1 className='font-bold text-5xl'>Web Developer</h1>
-      <p>Crafting beautiful, functional websites with precision & passion. Let’s build something amazing!</p>
-    </div>
-  )
-}
 
-export default HeroSection
+  return (
+    <div className="h-screen flex justify-center items-center text-center text-white bg-gray-900">
+      {/* Hero Content */}
+      <div className="z-10 flex flex-col justify-center items-center min-h-full">
+        <Typewriter
+          textStyle={{
+            fontWeight: "bold",
+            fontSize: "3rem",
+          }}
+          startDelay={500}
+          cursorColor="white"
+          multiText={["Web Developer", "Web Designer"]}
+          multiTextDelay={2000}
+          typeSpeed={100}
+          loop={true}
+        />
+        <p className="text-lg text-gray-300">
+          Crafting beautiful, functional websites with precision & passion.
+          Let's build something amazing!
+        </p>
+      </div>
+    </div>
+  );
+};
+
+export default HeroSection;
