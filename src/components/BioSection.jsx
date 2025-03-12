@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "./Button";
+import { Link } from "react-router-dom";
 
 const BioSection = () => {
   return (
@@ -12,7 +12,18 @@ const BioSection = () => {
           to life. With a focus on seamless experiences and pixel-perfect
           detail, I craft digital solutions that make an impact.
         </p>
-        <Button bgcolor="bg-[#d9d9d9]" text="Hire Me"/>
+        <div className="flex gap-4 my-4">
+          <div className="hover:bg-[#2A9D8F] h-10 py-2 px-6 rounded-3xl bg-[#d9d9d9] flex items-center justify-center shadow-md cursor-pointer">
+            <Link to="/about">
+              <button className="text-xl">About Me...</button>
+            </Link>
+          </div>
+          <div className="hover:bg-[#2A9D8F] h-10 py-2 px-6 rounded-3xl bg-[#d9d9d9] flex items-center justify-center shadow-md cursor-pointer">
+            <Link to={'contact'}>
+              <button className="text-xl">Hire Me!</button>
+            </Link>
+          </div>
+        </div>
       </div>
       <div>
         <img src="/src/assets/images/user.jpg" alt="user" className="rounded-[50%] w-93 h-93 object-fill"/>

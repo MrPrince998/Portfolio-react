@@ -3,7 +3,7 @@ import ProjectSection from '../components/ProjectSection'
 
 const Project = () => {
   return (
-    <div className='py-18'>
+    <div className='py-18 px-24'>
       <ProjectSection/>
     </div>
   )

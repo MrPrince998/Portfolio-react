@@ -12,7 +12,7 @@ const RecentWork = () => {
         {RecentWorkItem?.map((item, i) => {
           return (
             <div key={i} className="py-3 px-5 gap-10 my-10 shadow-md rounded-lg">
-              <div className="w-96">
+              <div className="w-90">
                 <img
                   src={item.image}
                   alt={item.title}
