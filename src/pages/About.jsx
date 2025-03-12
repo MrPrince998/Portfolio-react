@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section className='flex py-20 px-24 gap-10 justify-between items-center'>
       <div className=' overflow-hidden shadow-lg bg-[#f9f9f9f9] w-102 h-102 rounded-[50%] flex items-center justify-center'>
-        <img src="/src/assets/images/user.jpg" alt="user" className='w-100 h-100 object-fill rounded-[50%]'/>
+        <img src="/src/assets/images/user.png" alt="user" className='w-100 h-100 object-fill rounded-[50%]'/>
       </div>
       <div className='w-200'>
         <h1 className='font-bold text-6xl my-4'>"Bharat Rana"</h1>

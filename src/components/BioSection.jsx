@@ -26,7 +26,7 @@ const BioSection = () => {
         </div>
       </div>
       <div>
-        <img src="/src/assets/images/user.jpg" alt="user" className="rounded-[50%] w-93 h-93 object-fill"/>
+        <img src="/src/assets/images/user.png" alt="user" className="rounded-[50%] w-93 h-93 object-fill"/>
       </div>
     </section>
   );
