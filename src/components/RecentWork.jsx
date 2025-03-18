@@ -9,7 +9,7 @@ const RecentWork = () => {
         Recent <span className="text-[#0637B1]">Work</span>
       </h1>
       <div className="flex flex-wrap gap-10 justify-between">
-        {RecentWorkItem?.map((item, i) => {
+        {RecentWorkItem.slice(0,6)?.map((item, i) => {
           return (
             <div key={i} className="py-3 px-5 gap-10 my-10 shadow-md rounded-lg">
               <div className="w-90">
